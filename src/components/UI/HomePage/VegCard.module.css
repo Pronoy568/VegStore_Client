@@ -1,0 +1,14 @@
+/* VegCard.module.css */
+
+.imageContainer {
+  position: relative;
+  height: 190px;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px;
+}

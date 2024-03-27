@@ -3,7 +3,9 @@ import { TProduct } from "@/types/global";
 import { Box, Container, Typography } from "@mui/material";
 
 const FlashSalePage = async () => {
-  const res = await fetch(`http://localhost:5000/api/v1/products`);
+  const res = await fetch(
+    `https://veg-store-server.vercel.app/api/v1/products`
+  );
   const { data } = await res.json();
 
   const flashSale = data?.filter((item: TProduct) => item.sale);

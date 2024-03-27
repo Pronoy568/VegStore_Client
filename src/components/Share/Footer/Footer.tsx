@@ -111,6 +111,12 @@ const Footer = () => {
                 <Typography component="p" color={"lightgray"}>
                   Cheap
                 </Typography>
+                <Typography component="p" color={"lightgray"}>
+                  Clean Product
+                </Typography>
+                <Typography component="p" color={"lightgray"}>
+                  Nutritious
+                </Typography>
               </div>
             </Box>
 
@@ -181,7 +187,7 @@ const Footer = () => {
                   Live Chat
                 </Typography>
                 <Typography component="p" color={"lightgray"}>
-                  Visit Us (Address)
+                  Visit Us
                 </Typography>
               </div>
             </Box>

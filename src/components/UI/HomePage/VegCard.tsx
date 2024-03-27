@@ -5,6 +5,7 @@ import { Box, Stack, Typography } from "@mui/material";
 import Image from "next/image";
 import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 import Link from "next/link";
+import styles from "./VegCard.module.css";
 
 const VegCard = ({ product }: { product: TProduct }) => {
   return (
@@ -30,13 +31,15 @@ const VegCard = ({ product }: { product: TProduct }) => {
           Sale
         </Typography>
       </Box>
-      <Image
-        className="rounded-lg"
-        src={product.image}
-        width={300}
-        height={200}
-        alt="products"
-      />
+      <div className={styles.imageContainer}>
+        <Image
+          className={styles.image}
+          src={product.image}
+          width={300}
+          height={200}
+          alt="products"
+        />
+      </div>
       <Box px={1} mt={1}>
         <Typography component="p" fontSize={20}>
           {product.title}

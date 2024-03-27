@@ -11,7 +11,9 @@ type TProps = {
 };
 
 export const generateStaticParams = async () => {
-  const res = await fetch("http://localhost:5000/api/v1/products");
+  const res = await fetch(
+    "https://veg-store-server.vercel.app/api/v1/products"
+  );
   const { data } = await res.json();
   return data.slice(0, 10).map((product: TProduct) => ({
     productId: product._id,
@@ -20,7 +22,7 @@ export const generateStaticParams = async () => {
 
 const SingleProductPage = async ({ params }: TProps) => {
   const res = await fetch(
-    `http://localhost:5000/api/v1/products/${params.productId}`,
+    `https://veg-store-server.vercel.app/api/v1/products/${params.productId}`,
     {
       cache: "no-store",
     }
@@ -100,7 +102,7 @@ const SingleProductPage = async ({ params }: TProps) => {
           </Box>
         </Stack>
         <Stack>
-          <Box pt={10}>
+          <Box bgcolor={"ghostwhite"} mt={10} p={2}>
             <Typography variant="h4" component="h1" fontWeight={600}>
               Description
             </Typography>

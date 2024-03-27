@@ -3,7 +3,9 @@ import { TProduct } from "@/types/global";
 import { Box, Checkbox, Container, Stack, Typography } from "@mui/material";
 
 const ProductsPage = async () => {
-  const res = await fetch(`http://localhost:5000/api/v1/products`);
+  const res = await fetch(
+    `https://veg-store-server.vercel.app/api/v1/products`
+  );
   const { data } = await res.json();
   return (
     <Box pt={15} mb={10}>
