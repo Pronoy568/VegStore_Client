@@ -1,8 +1,8 @@
 import { Box, Container, Stack, Typography } from "@mui/material";
-import broccoli1 from "@/assets/broccoli1.jpg";
+import spinach1 from "@/assets/spinach1.jpg";
 import carrot1 from "@/assets/carrot1.jpg";
-import tomato6 from "@/assets/tomato6.jpg";
-import pepper6 from "@/assets/pepper6.jpg";
+import tomato1 from "@/assets/tomato5.jpg";
+import potato4 from "@/assets/potato1.jpg";
 import Image from "next/image";
 
 const Categories = () => {
@@ -30,7 +30,7 @@ const Categories = () => {
             <div className="md:grid grid-cols-12 grid-rows-2 grid-flow-col gap-8 mt-10 space-y-5 md:space-y-0">
               <div className=" h-[513px] rounded-2xl col-span-4 lg:col-span-4 row-span-2">
                 <Image
-                  src={pepper6}
+                  src={spinach1}
                   height={513}
                   width={300}
                   alt="mensPolo"
@@ -44,13 +44,13 @@ const Categories = () => {
                     fontSize: 30,
                   }}
                 >
-                  Pepper
+                  Spinach
                 </Typography>
               </div>
 
               <div className=" h-[240px] rounded-2xl col-span-4 lg:col-span-4 row-span-1">
                 <Image
-                  src={broccoli1}
+                  src={tomato1}
                   height={513}
                   width={300}
                   alt="mensPolo"
@@ -64,7 +64,7 @@ const Categories = () => {
                     fontSize: 30,
                   }}
                 >
-                  Broccoli
+                  Tomato
                 </Typography>
               </div>
               <div className=" h-[240px] rounded-2xl col-span-4 lg:col-span-4 row-span-1">
@@ -90,7 +90,7 @@ const Categories = () => {
 
               <div className=" h-[513px] rounded-2xl col-span-4 lg:col-span-4 row-span-2">
                 <Image
-                  src={tomato6}
+                  src={potato4}
                   height={513}
                   width={300}
                   alt="mens"
@@ -104,7 +104,7 @@ const Categories = () => {
                     fontSize: 30,
                   }}
                 >
-                  Tomato
+                  Potato
                 </Typography>
               </div>
             </div>

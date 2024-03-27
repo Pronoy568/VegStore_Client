@@ -101,7 +101,7 @@ const ProductsPage = async () => {
               Our Collection Of Products
             </Typography>
             <Typography component="p" fontWeight={600} mt={2}>
-              Show 1-12 of {data?.length} item(s)
+              Show 1-{data?.length} of {data?.length} item(s)
             </Typography>
             <Typography
               component="p"

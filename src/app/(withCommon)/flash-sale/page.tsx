@@ -17,7 +17,7 @@ const FlashSalePage = async () => {
               Flash sale
             </Typography>
             <Typography component="p" fontWeight={600} mt={2}>
-              Show 1-12 of {data?.length} item(s)
+              Show 1-{data?.length} of {flashSale?.length} item(s)
             </Typography>
             <Typography
               component="p"
